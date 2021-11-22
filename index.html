@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">Here comes the screen</div>
+        <div class="upper-controls">
+            <div class="btn-upper">clear</div>
+            <div class="btn-upper">delete</div>               
+        </div>
+        <div class="btn-small">
+            <div class="btn-number">7</div>
+            <div class="btn-number">8</div>    
+            <div class="btn-number">9</div>  
+            <div class="btn-operator">G</div>
+        </div>         
+        <div class="btn-small">
+            <div class="btn-number">7</div>
+            <div class="btn-number">8</div>    
+            <div class="btn-number">9</div>  
+            <div class="btn-operator">G</div>
+        </div>       
+        <div class="btn-small">
+            <div class="btn-number">7</div>
+            <div class="btn-number">8</div>    
+            <div class="btn-number">9</div>  
+            <div class="btn-operator">G</div>  
+        </div>     
+        <div class="btn-small">
+            <div class="btn-number">7</div>
+            <div class="btn-number">8</div>    
+            <div class="btn-number">9</div>  
+            <div class="btn-operator">G</div> 
+        </div>
+    </div>
+
+    <script>
+        function sumF(a,b){
+            return a+b;    
+        }
+
+        function subtractF(a,b){
+            return a-b; 
+        }
+
+        function multiplyF(a,b){
+            return a*b;    
+        }
+
+        function divideF(a,b){
+            return a/b;
+        }
+        
+        function operate(number1, number2, operation){
+            if (operation == "sum"){
+                return sumF(number1, number2);
+            }else if (operation == "subtract"){
+                return subtractF(number1, number2);
+            }else if (operation == "multiply"){
+                return multiplyF(number1, number2);
+            }else if (operation == "divide"){
+                return divideF(number1, number2);
+            }else{
+
+            }
+        }
+
+        // console.log(sumF(4,6)-10);
+        // console.log(sumF(-4,6)-2);
+        // console.log(subtractF(4,6)+2);
+        // console.log(subtractF(4,-6)-10);
+        // console.log(multiplyF(4,6)-24);
+        // console.log(multiplyF(4,-6)+24);
+        // console.log(divideF(40,6));
+        // console.log(divideF(0.4,6));
+        // console.log(divideF(4,0));
+        console.log(operate(4,6,"sum"));
+        console.log(operate(4,6,"subtract"));
+        console.log(operate(4,6,"multiply"));
+        console.log(operate(4,6,"divide"));
+    </script>
+</body>
+</html>
