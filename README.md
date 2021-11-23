@@ -6,4 +6,4 @@ The obkective of this project was to gain further practice in javascript (create
 
 The calculator is available at: https://githubblues.github.io/TOP_Calculator/
 
-This project was executed in the context of "The Odin Project" web-development course. A detailed description of the requirements to be met by the calculator is can be found at: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/calculator.
+This project was executed in the context of "The Odin Project" web-development course. A detailed description of the requirements to be met by the calculator is found at: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/calculator.
