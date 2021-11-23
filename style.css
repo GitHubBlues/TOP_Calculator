@@ -1,5 +1,6 @@
 body{
     background-color: aqua;
+    box-sizing:border-box;
 }
 
 .calculator{
@@ -35,7 +36,7 @@ body{
     border: 5px solid yellow;
 }
 
-.btn-number,
+.btn-digit,
 .btn-operator{
     border: 2px solid pink;
     margin: 4px;
