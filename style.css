@@ -4,24 +4,29 @@ body{
     font-family: sans-serif;
 }
 
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 2rem
+}
+
 .calculator{
     background-color: #D3E3FC;
-    width: 33rem;
-    height: 43rem;
+    width: 30rem;
+    height: 39rem;
     display: flex;
     flex-direction: column;
-    border: 0.5rem solid #486496;
-    margin: 3rem auto;
+    border: 0.4rem solid #486496;
+    margin: 2rem auto;
 }
 
 .screen{
     background: rgb(231, 231, 231);
-    width: 28rem;
+    width: 26rem;
     height: 8rem;
     border: 0.4rem solid #486496;
-    margin: 2rem auto 1.5rem auto;
-    padding: 0.4rem;
-
+    margin: 1.2rem auto 1.2rem auto;
+    padding: 0.3rem;
 }
 
 .screen-calculation{
@@ -40,7 +45,7 @@ body{
 
 .btn-small{
     display: flex; 
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     flex-direction: row;
     margin: 0.6rem 2.5rem;
     gap: 1rem;
@@ -50,7 +55,7 @@ body{
 .btn-digit,
 .btn-operator{
     width: 7rem;
-    height: 4.5rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;

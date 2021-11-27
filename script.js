@@ -1,3 +1,4 @@
+/* global variables*/
 let operand1_ = "";
 let operand2_ = "";
 let operator_ = "";
@@ -5,6 +6,8 @@ let operatorSymbol = "";
 let operand1_provisional = "";
 let operatorB_ = false; 
 
+
+/* mathematic functions*/
 function addF(a,b){
     return Number(a) + Number(b);    
 }
@@ -35,6 +38,8 @@ function operate(number1, number2, operation){
     }
 }
 
+
+/* functions handling inputs*/
 function processInputDigit(arg){
     if (operand1_provisional.length !==0){
         operand1_provisional = "";
@@ -160,49 +165,37 @@ function processInputClear(){
     btnScreenCalc.textContent = "" ; 
 };
 
-const btn0 = document.querySelector("#key0");
-btn0.addEventListener("click", (e) => processInputDigit("0"));
-const btn1 = document.querySelector("#key1");
-btn1.addEventListener("click", (e) => processInputDigit("1"));
-const btn2 = document.querySelector("#key2");
-btn2.addEventListener("click", (e) => processInputDigit("2"));
-const btn3 = document.querySelector("#key3");
-btn3.addEventListener("click", (e) => processInputDigit("3"));
-const btn4 = document.querySelector("#key4");
-btn4.addEventListener("click", (e) => processInputDigit("4"));
-const btn5 = document.querySelector("#key5");
-btn5.addEventListener("click", (e) => processInputDigit("5"));
-const btn6 = document.querySelector("#key6");
-btn6.addEventListener("click", (e) => processInputDigit("6"));
-const btn7 = document.querySelector("#key7");
-btn7.addEventListener("click", (e) => processInputDigit("7"));
-const btn8 = document.querySelector("#key8");
-btn8.addEventListener("click", (e) => processInputDigit("8"));
-const btn9 = document.querySelector("#key9");
-btn9.addEventListener("click", (e) => processInputDigit("9"));
 
-const btnOp1 = document.querySelector("#keySum");
-btnOp1.addEventListener("click", (e) => processInputOperator("add"));
-const btnOp2 = document.querySelector("#keySubtract");
-btnOp2.addEventListener("click", (e) => processInputOperator("subtract"));
-const btnOp3 = document.querySelector("#keyMultiply");
-btnOp3.addEventListener("click", (e) => processInputOperator("multiply"));
-const btnOp4 = document.querySelector("#keyDivide");
-btnOp4.addEventListener("click", (e) => processInputOperator("divide"));
-const btnOp5 = document.querySelector("#keyEqual");
-btnOp5.addEventListener("click", (e) => processInputEqual("="));
-const btnOp6 = document.querySelector("#keyPoint");
-btnOp6.addEventListener("click", (e) => processInputDigit("."));
-const btnOp7 = document.querySelector("#keyClear");
-btnOp7.addEventListener("click", (e) => processInputClear("clear"));
-const btnOp8 = document.querySelector("#keyBackspace");
-btnOp8.addEventListener("click", (e) => processInputDigit("backspace"));
-
+/* query selectors*/
 const btnScreenResult = document.querySelector(".screen-result");
 const btnScreenCalc = document.querySelector(".screen-calculation");
+const btnDigit = document.querySelectorAll(".btn-digit");
+const btnOp1 = document.querySelector("#keySum");
+const btnOp2 = document.querySelector("#keySubtract");
+const btnOp3 = document.querySelector("#keyMultiply");
+const btnOp4 = document.querySelector("#keyDivide");
+const btnOp5 = document.querySelector("#keyEqual");
+const btnOp6 = document.querySelector("#keyPoint");
+const btnOp7 = document.querySelector("#keyClear");
+const btnOp8 = document.querySelector("#keyBackspace");
 
+
+/* add eventListeners for screen click*/
+btnDigit.forEach(item => item.addEventListener("click", (e) => processInputDigit(e.target.innerText)));
+btnOp1.addEventListener("click", (e) => processInputOperator("add"));
+btnOp2.addEventListener("click", (e) => processInputOperator("subtract"));
+btnOp3.addEventListener("click", (e) => processInputOperator("multiply"));
+btnOp4.addEventListener("click", (e) => processInputOperator("divide"));
+btnOp5.addEventListener("click", (e) => processInputEqual("="));
+btnOp6.addEventListener("click", (e) => processInputDigit("."));
+btnOp7.addEventListener("click", (e) => processInputClear("clear"));
+btnOp8.addEventListener("click", (e) => processInputDigit("backspace"));
+
+
+/* add eventListeners for keyboard touchpad*/
 const keyboard = document.addEventListener("keydown", (e) => {
     const keycode = e.key;
+    e.preventDefault();  
     if (keycode >= 0 && keycode < 10) {
         processInputDigit(keycode.toString());    
     } else if (keycode == "."){
