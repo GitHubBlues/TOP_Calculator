@@ -64,6 +64,14 @@ function processInputDigit(arg){
             btnScreenResult.textContent = operand1_ ; 
             btnScreenCalc.textContent = operand1_ ;
         }
+        
+        if (operand1_.length > 13){
+            console.log(operand1_.length);     
+            operand1_ = operand1_.slice(0, -1);  
+            console.log(operand1_);
+            btnScreenResult.textContent = operand1_ ; 
+            btnScreenCalc.textContent = "cannot add more digits - number too long" ;
+        }
 
     } else {
         if (arg == "."){
@@ -84,6 +92,14 @@ function processInputDigit(arg){
             btnScreenResult.textContent = operand2_ ; 
             btnScreenCalc.textContent = operand1_.concat(operatorSymbol, operand2_); 
         }
+    
+        if (operand2_.length > 13){
+            console.log(operand2_.length);     
+            operand2_ = operand2_.slice(0, -1);  
+            console.log(operand2_);
+            btnScreenResult.textContent = operand2_ ; 
+            btnScreenCalc.textContent = "cannot add more digits - number too long" ;
+        }    
     }
 }
 
