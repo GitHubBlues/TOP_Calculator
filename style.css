@@ -7,45 +7,47 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    margin: 2rem
 }
 
 .calculator{
     background-color: #D3E3FC;
-    width: 30rem;
-    height: 39rem;
+    width: 34rem;
+    height: 37rem;
     display: flex;
     flex-direction: column;
     border: 0.4rem solid #486496;
-    margin: 2rem auto;
+    border-radius: 1.5rem;
+    margin: 1.5rem auto;
 }
 
 .screen{
     background: rgb(231, 231, 231);
-    width: 26rem;
-    height: 8rem;
+    width: 30rem;
+    height: 7rem;
     border: 0.4rem solid #486496;
+    border-radius: 1rem;
     margin: 1.2rem auto 1.2rem auto;
     padding: 0.3rem;
 }
 
 .screen-calculation{
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     justify-content: end; 
-    margin: 0.25rem 0.4rem 0.8rem 0.4rem;
+    margin: 0.2rem 0.4rem 0.5rem 0.4rem;
 }
 
 .screen-result{
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     justify-content: end; 
+    margin: 0.2rem 0.4rem 0.5rem 0.4rem;
 }
 
 
 .btn-small{
     display: flex; 
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     flex-direction: row;
     margin: 0.6rem 2.5rem;
     gap: 1rem;
@@ -55,11 +57,11 @@ h1{
 .btn-digit,
 .btn-operator{
     width: 7rem;
-    height: 4rem;
+    height: 3.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 0.5rem;
     box-shadow: 0.3rem  0.3rem 0.45rem ;
     /* margin: 4px;
     padding: 4px;  */
@@ -68,16 +70,19 @@ h1{
 #keyPoint,
 .btn-digit{
     background:#FFFFFF;
+    border: 0.1rem solid #aaaaaa;
 }
 
 .btn-operator{
     background:#FFCCBC;
+    border: 0.1rem solid #c59e92;
 }
 
 #keyClear,
 #keyBackspace{
     width: 11.2rem;  
     background-color: #a9bbd8;
+    border: 0.1rem solid #748196;
 }
 
 #key0{

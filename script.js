@@ -65,7 +65,7 @@ function processInputDigit(arg){
             btnScreenCalc.textContent = operand1_ ;
         }
         
-        if (operand1_.length > 13){
+        if (operand1_.length > 12){
             console.log(operand1_.length);     
             operand1_ = operand1_.slice(0, -1);  
             console.log(operand1_);
@@ -93,7 +93,7 @@ function processInputDigit(arg){
             btnScreenCalc.textContent = operand1_.concat(operatorSymbol, operand2_); 
         }
     
-        if (operand2_.length > 13){
+        if (operand2_.length > 12){
             console.log(operand2_.length);     
             operand2_ = operand2_.slice(0, -1);  
             console.log(operand2_);
