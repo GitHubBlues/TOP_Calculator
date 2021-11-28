@@ -158,7 +158,7 @@ function processInputOperator(arg){
 }
 
 function processInputEqual(arg){
-    if ( operand1_.length>0 && operand1_.length>0 && operatorB_ == true){
+    if ( operand1_.length>0 && operand2_.length>0 && operatorB_ == true){
         let result = operate(operand1_, operand2_, operator_); 
         btnScreenResult.textContent = result; 
         btnScreenCalc.textContent = operand1_.concat(operatorSymbol + operand2_ + "=" + result); 
