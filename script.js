@@ -65,7 +65,7 @@ function processInputDigit(arg){
             btnScreenCalc.textContent = operand1_ ;
         }
         
-        if (operand1_.length > 12){
+        if (operand1_.length > 17){
             console.log(operand1_.length);     
             operand1_ = operand1_.slice(0, -1);  
             console.log(operand1_);
@@ -93,7 +93,7 @@ function processInputDigit(arg){
             btnScreenCalc.textContent = operand1_.concat(operatorSymbol, operand2_); 
         }
     
-        if (operand2_.length > 12){
+        if (operand2_.length > 17){
             console.log(operand2_.length);     
             operand2_ = operand2_.slice(0, -1);  
             console.log(operand2_);
@@ -161,7 +161,7 @@ function processInputEqual(arg){
     if ( operand1_.length>0 && operand2_.length>0 && operatorB_ == true){
         let result = operate(operand1_, operand2_, operator_); 
         btnScreenResult.textContent = result; 
-        btnScreenCalc.textContent = operand1_.concat(operatorSymbol + operand2_ + "=" + result); 
+        btnScreenCalc.textContent = operand1_.concat(operatorSymbol + operand2_ ); 
         operand1_ = "";
         operand2_ = "";
         operator_ = "";
