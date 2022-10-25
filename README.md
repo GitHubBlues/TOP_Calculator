@@ -2,6 +2,7 @@
 
 ## ***Brief description***
 For this project I created a simple online calculator.
+
 This is the third project in the Javascript Basics module (Foundations path) of The Odin Project web-development course. A detailed description of the requirements to be met in this project is found at: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/calculator.
 
 Live demo available at: https://githubblues.github.io/TOP_Calculator/.
