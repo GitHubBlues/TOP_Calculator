@@ -1,9 +1,28 @@
-# **Calculator** 
+# **Calculator**
 
-The calculator has functionality for carrying out the four main mathematical operations (addition, subtraction, multiplication and division). It is able to work with float numbers and integers and can be used by clicking on the computer screen as well as by using the keyboard. 
+## ***Brief description***
+For this project I created a simple online calculator.
+This is the third project in the Javascript Basics module (Foundations path) of The Odin Project web-development course. A detailed description of the requirements to be met in this project is found at: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/calculator.
 
-The objective of this project was to gain further practice in javascript (create funtions, events (click and keyup) and DOM manipulation).
+Live demo available at: https://githubblues.github.io/TOP_Calculator/.
 
-The calculator is available at: https://githubblues.github.io/TOP_Calculator/
+## ***Features***
+- Functionality for carrying out the four main mathematical operations (addition, subtraction, multiplication and division)
+- Works with float numbers and integers 
+- Includes keyboard support
+- Clear button that restarts the calculator 
+- Delete button which deletes individual numbers
 
-This project was executed in the context of "The Odin Project" web-development course. A detailed description of the requirements to be met by the calculator is found at: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/calculator.
+## ***Learning objectives***
+- Practice Javascript 
+- Practice DOM manipulation 
+- Use event listeners for keyboard (prevent default behavior, keycode)
+
+## ***Development***
+* **Technologies**
+    * HTML 
+    * CSS 
+	* Javascript
+	
+## ***Screenshot***
+![TOP_5_Calculator](https://user-images.githubusercontent.com/57163017/197747713-445ee195-ef1b-4857-a5f5-cb7e41e1905e.png)
